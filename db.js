@@ -11,4 +11,4 @@ var User = new Schema({
 });
 
 mongoose.model('User', User);
-Mongoose.connect("mongodb://xalon:proto1@ds049888.mongolab.com:49888/xalon");
+mongoose.connect("mongodb://xalon:proto1@ds049888.mongolab.com:49888/xalon");
