@@ -2,12 +2,14 @@ extends layout
 
 block content
   h1= title
-  form(action="/Users", method="post", accept-charset="utf-8")
-    
-    input(type="text", name="email", placeholder="Email")
-    br
-    input(type="password", name="password", placeholder="password")
-    br
-    input(type="submit", value="Create User")
+  ul
+    li
+      a(href='/') Home
+    li
+      a(href='#/adduser') Add a new User
+
+  div(ng-view)
+
+
 
 

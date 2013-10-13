@@ -1,7 +1,15 @@
 doctype 5
-html
+html(ng-app="myApp")
   head
     title= title
+    script(src="/javascripts/vendor/angular/angular.min.js")
+    script(src="/javascripts/vendor/angular/angular-route.min.js")
+
+    script(src="/javascripts/app.js")
+    script(src="/javascripts/filters.js")
+    script(src="/javascripts/controllers.js")
+    script(src="/javascripts/services.js")
+    script(src="/javascripts/directives.js")
     link(rel='stylesheet', href='/stylesheets/style.css')
   body
     block content

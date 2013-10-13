@@ -15,5 +15,10 @@ exports.create = function(req,res){
 }
 
 exports.list = function(req, res){
-  res.send("respond with a resource");
-};
+  User.find(function(err, users, count){
+  	res.render('index',{
+  		title: 'View all users',
+  		users: users
+  	});
+  });
+}
