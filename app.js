@@ -34,6 +34,7 @@ if ('development' == app.get('env')) {
 }
 
 app.get('/', routes.index);
+app.post('/', routes.index);
 app.get('/partials/:name', routes.partials);
 app.get('/api/users', api.users);
 app.post('/api/users',user.create);
