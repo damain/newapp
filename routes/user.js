@@ -10,7 +10,12 @@ exports.create = function(req,res){
 		email : req.body.email,
 		password : req.body.password
 	}).save(function(err, user, count){
-		res.redirect('/');
+		if(err){
+			res.json(false);
+		}else{
+			res.json(true);	
+		}
+		
 	})
 }
 

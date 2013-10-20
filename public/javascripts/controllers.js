@@ -18,6 +18,7 @@ myAppControllers.controller('AddUserCtrl',['$scope', '$http',
 			success(function(data,status,headers,config){
 				console.log(data);
 				console.log(status);
+				$scope.message = "User successfully added";
 			});
 		}
 
