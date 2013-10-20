@@ -1,4 +1,5 @@
-form(ng-controller="AddUserCtrl", ng-submit="submit()" , method="post", accept-charset="utf-8")
+h2 Register
+form(name='addUserForm', ng-controller="AddUserCtrl", ng-submit="submit()" , method="post", accept-charset="utf-8")
     input(type="text", name="email", ng-model="form.email", placeholder="Email")
     br
     input(type="password", name="password", ng-model="form.password", placeholder="password")

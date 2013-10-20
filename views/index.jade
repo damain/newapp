@@ -1,12 +1,15 @@
 extends layout
 
+
+
 block content
   h1= title
+  #message {{message}}
   ul
     li
       a(href='/') Home
     li
-      a(href='#/adduser') Add a new User
+      a(href='#/adduser') Add a new Users
 
   div(ng-view)
 
